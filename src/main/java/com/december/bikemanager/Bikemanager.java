@@ -4,13 +4,8 @@ package com.december.bikemanager;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import com.december.bikemanager.cli.CLIAddMenu;
-import com.december.bikemanager.cli.CLIComponent;
-import com.december.bikemanager.cli.CLIMainMenu;
-import com.december.bikemanager.cli.CLIProductDetails;
-import com.december.bikemanager.cli.CLISearchMenu;
-import com.december.bikemanager.cli.CLIUpdateProduct;
-import com.december.bikemanager.data.ProductManager;
+import com.december.bikemanager.cli.*;
+import com.december.bikemanager.data.*;
 
 import java.lang.ArrayIndexOutOfBoundsException;
 

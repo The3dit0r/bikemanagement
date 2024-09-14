@@ -5,9 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 
-import com.december.bikemanager.data.ProductManager;
-import com.december.bikemanager.data.Product;
-import com.december.bikemanager.data.Utility;
+import com.december.bikemanager.data.*;
 
 public class CLISearchMenu extends CLIComponent {
   private int page = 0;

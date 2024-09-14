@@ -3,7 +3,7 @@ package com.december.bikemanager.cli;
 
 import java.util.Scanner;
 
-import com.december.bikemanager.Bikemanager;
+import com.december.bikemanager.*;
 
 public class CLIComponent {
     public String name = "Unnamed";
@@ -41,9 +41,28 @@ public class CLIComponent {
         return userInput;
     }
 
+    public static void clearConsole() {
+        try {
+            String operatingSystem = System.getProperty("os.name");
+
+            if (operatingSystem.contains("Windows")) {
+                ProcessBuilder pb = new ProcessBuilder("cmd", "/c", "cls");
+                Process startProcess = pb.inheritIO().start();
+                startProcess.waitFor();
+            } else {
+                ProcessBuilder pb = new ProcessBuilder("clear");
+                Process startProcess = pb.inheritIO().start();
+
+                startProcess.waitFor();
+            }
+        } catch (Exception e) {
+            System.out.print("\033[H\033[2J");
+            System.out.flush();
+        }
+    }
+
     public void init() {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
+        clearConsole();
     }
 
     public void render() {

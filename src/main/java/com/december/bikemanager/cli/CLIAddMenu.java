@@ -2,9 +2,7 @@ package com.december.bikemanager.cli;
 
 import java.util.Scanner;
 
-import com.december.bikemanager.data.ProductManager;
-import com.december.bikemanager.data.Product;
-import com.december.bikemanager.data.Utility;
+import com.december.bikemanager.data.*;
 
 public class CLIAddMenu extends CLIComponent {
   private Product localProduct;

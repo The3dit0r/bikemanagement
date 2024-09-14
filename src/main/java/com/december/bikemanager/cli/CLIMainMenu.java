@@ -3,7 +3,7 @@ package com.december.bikemanager.cli;
 
 import java.util.Scanner;
 
-import com.december.bikemanager.data.ProductManager;
+import com.december.bikemanager.data.*;
 
 public class CLIMainMenu extends CLIComponent {
 
